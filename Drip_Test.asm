@@ -1,79 +1,79 @@
 _initialize:
-;hardware.h,140 :: 		void initialize()
+;hardware.h,143 :: 		void initialize()
 SUB	SP, SP, #4
 STR	LR, [SP, #0]
-;hardware.h,142 :: 		GPIO_Clk_Enable(&GPIOA_BASE);
+;hardware.h,145 :: 		GPIO_Clk_Enable(&GPIOA_BASE);
 MOVW	R0, #lo_addr(GPIOA_BASE+0)
 MOVT	R0, #hi_addr(GPIOA_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,143 :: 		GPIO_Clk_Enable(&GPIOB_BASE);
+;hardware.h,146 :: 		GPIO_Clk_Enable(&GPIOB_BASE);
 MOVW	R0, #lo_addr(GPIOB_BASE+0)
 MOVT	R0, #hi_addr(GPIOB_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,144 :: 		GPIO_Clk_Enable(&GPIOC_BASE);
+;hardware.h,147 :: 		GPIO_Clk_Enable(&GPIOC_BASE);
 MOVW	R0, #lo_addr(GPIOC_BASE+0)
 MOVT	R0, #hi_addr(GPIOC_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,145 :: 		GPIO_Clk_Enable(&GPIOD_BASE);
+;hardware.h,148 :: 		GPIO_Clk_Enable(&GPIOD_BASE);
 MOVW	R0, #lo_addr(GPIOD_BASE+0)
 MOVT	R0, #hi_addr(GPIOD_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,146 :: 		GPIO_Clk_Enable(&GPIOE_BASE);
+;hardware.h,149 :: 		GPIO_Clk_Enable(&GPIOE_BASE);
 MOVW	R0, #lo_addr(GPIOE_BASE+0)
 MOVT	R0, #hi_addr(GPIOE_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,147 :: 		GPIO_Clk_Enable(&GPIOF_BASE);
+;hardware.h,150 :: 		GPIO_Clk_Enable(&GPIOF_BASE);
 MOVW	R0, #lo_addr(GPIOF_BASE+0)
 MOVT	R0, #hi_addr(GPIOF_BASE+0)
 BL	_GPIO_Clk_Enable+0
-;hardware.h,149 :: 		GPIO_Digital_Output(&GPIOA_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,152 :: 		GPIO_Digital_Output(&GPIOA_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOA_BASE+0)
 MOVT	R0, #hi_addr(GPIOA_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,150 :: 		GPIO_Digital_Output(&GPIOB_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,153 :: 		GPIO_Digital_Output(&GPIOB_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOB_BASE+0)
 MOVT	R0, #hi_addr(GPIOB_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,151 :: 		GPIO_Digital_Output(&GPIOC_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,154 :: 		GPIO_Digital_Output(&GPIOC_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOC_BASE+0)
 MOVT	R0, #hi_addr(GPIOC_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,152 :: 		GPIO_Digital_Output(&GPIOD_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,155 :: 		GPIO_Digital_Output(&GPIOD_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOD_BASE+0)
 MOVT	R0, #hi_addr(GPIOD_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,153 :: 		GPIO_Digital_Output(&GPIOE_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,156 :: 		GPIO_Digital_Output(&GPIOE_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOE_BASE+0)
 MOVT	R0, #hi_addr(GPIOE_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,154 :: 		GPIO_Digital_Output(&GPIOF_BASE, _GPIO_PINMASK_ALL);
+;hardware.h,157 :: 		GPIO_Digital_Output(&GPIOF_BASE, _GPIO_PINMASK_ALL);
 MOVW	R1, #65535
 MOVW	R0, #lo_addr(GPIOF_BASE+0)
 MOVT	R0, #hi_addr(GPIOF_BASE+0)
 BL	_GPIO_Digital_Output+0
-;hardware.h,157 :: 		GPIO_Digital_Input(&GPIOB_BASE, _GPIO_PINMASK_0 | _GPIO_PINMASK_1 | _GPIO_PINMASK_2 | _GPIO_PINMASK_4 | _GPIO_PINMASK_6 | _GPIO_PINMASK_8 | _GPIO_PINMASK_9 );
+;hardware.h,160 :: 		GPIO_Digital_Input(&GPIOB_BASE, _GPIO_PINMASK_0 | _GPIO_PINMASK_1 | _GPIO_PINMASK_2 | _GPIO_PINMASK_4 | _GPIO_PINMASK_6 | _GPIO_PINMASK_8 | _GPIO_PINMASK_9 );
 MOVW	R1, #855
 MOVW	R0, #lo_addr(GPIOB_BASE+0)
 MOVT	R0, #hi_addr(GPIOB_BASE+0)
 BL	_GPIO_Digital_Input+0
-;hardware.h,158 :: 		GPIO_Digital_Input(&GPIOD_BASE, _GPIO_PINMASK_1 | _GPIO_PINMASK_3 | _GPIO_PINMASK_5 | _GPIO_PINMASK_7);
+;hardware.h,161 :: 		GPIO_Digital_Input(&GPIOD_BASE, _GPIO_PINMASK_1 | _GPIO_PINMASK_3 | _GPIO_PINMASK_5 | _GPIO_PINMASK_7);
 MOVS	R1, #170
 MOVW	R0, #lo_addr(GPIOD_BASE+0)
 MOVT	R0, #hi_addr(GPIOD_BASE+0)
 BL	_GPIO_Digital_Input+0
-;hardware.h,159 :: 		GPIO_Digital_Input(&GPIOE_BASE, _GPIO_PINMASK_0 | _GPIO_PINMASK_1 | _GPIO_PINMASK_7);
+;hardware.h,162 :: 		GPIO_Digital_Input(&GPIOE_BASE, _GPIO_PINMASK_0 | _GPIO_PINMASK_1 | _GPIO_PINMASK_7);
 MOVS	R1, #131
 MOVW	R0, #lo_addr(GPIOE_BASE+0)
 MOVT	R0, #hi_addr(GPIOE_BASE+0)
 BL	_GPIO_Digital_Input+0
-;hardware.h,161 :: 		ADC1_Init();
+;hardware.h,164 :: 		ADC1_Init();
 BL	_ADC1_Init+0
-;hardware.h,162 :: 		UART1_Init_Advanced(115200, _UART_8_BIT_DATA, _UART_NOPARITY, _UART_ONE_STOPBIT, &_GPIO_MODULE_USART1_PA9_10);
+;hardware.h,165 :: 		UART1_Init_Advanced(115200, _UART_8_BIT_DATA, _UART_NOPARITY, _UART_ONE_STOPBIT, &_GPIO_MODULE_USART1_PA9_10);
 MOVW	R0, #lo_addr(__GPIO_MODULE_USART1_PA9_10+0)
 MOVT	R0, #hi_addr(__GPIO_MODULE_USART1_PA9_10+0)
 PUSH	(R0)
@@ -83,44 +83,44 @@ MOVW	R1, #0
 MOV	R0, #115200
 BL	_UART1_Init_Advanced+0
 ADD	SP, SP, #4
-;hardware.h,163 :: 		USART1_SRbits.RXNE = 0;
+;hardware.h,166 :: 		USART1_SRbits.RXNE = 0;
 MOVS	R1, #0
 SXTB	R1, R1
 MOVW	R0, #lo_addr(USART1_SRbits+0)
 MOVT	R0, #hi_addr(USART1_SRbits+0)
 STR	R1, [R0, #0]
-;hardware.h,164 :: 		USART1_CR1bits.RXNEIE = 1;
+;hardware.h,167 :: 		USART1_CR1bits.RXNEIE = 1;
 MOVS	R1, #1
 SXTB	R1, R1
 MOVW	R0, #lo_addr(USART1_CR1bits+0)
 MOVT	R0, #hi_addr(USART1_CR1bits+0)
 STR	R1, [R0, #0]
-;hardware.h,165 :: 		NVIC_SetIntPriority(IVT_INT_USART1,3);
+;hardware.h,168 :: 		NVIC_SetIntPriority(IVT_INT_USART1,3);
 MOVS	R1, #3
 MOVS	R0, #53
 BL	_NVIC_SetIntPriority+0
-;hardware.h,166 :: 		NVIC_IntEnable(IVT_INT_USART1);
+;hardware.h,169 :: 		NVIC_IntEnable(IVT_INT_USART1);
 MOVW	R0, #53
 BL	_NVIC_IntEnable+0
-;hardware.h,167 :: 		EnableInterrupts();
+;hardware.h,170 :: 		EnableInterrupts();
 BL	_EnableInterrupts+0
-;hardware.h,169 :: 		}
+;hardware.h,172 :: 		}
 L_end_initialize:
 LDR	LR, [SP, #0]
 ADD	SP, SP, #4
 BX	LR
 ; end of _initialize
 _HCSR04_Read:
-;hardware.h,171 :: 		void HCSR04_Read()
+;hardware.h,174 :: 		void HCSR04_Read()
 SUB	SP, SP, #4
 STR	LR, [SP, #0]
-;hardware.h,173 :: 		TRIG_PS1 = 1;
+;hardware.h,176 :: 		TRIG_PS1 = 1;
 MOVS	R1, #1
 SXTB	R1, R1
 MOVW	R0, #lo_addr(GPIOD_ODR+0)
 MOVT	R0, #hi_addr(GPIOD_ODR+0)
 STR	R1, [R0, #0]
-;hardware.h,174 :: 		Delay_us(10);
+;hardware.h,177 :: 		Delay_us(10);
 MOVW	R7, #398
 MOVT	R7, #0
 NOP
@@ -131,13 +131,13 @@ BNE	L_HCSR04_Read0
 NOP
 NOP
 NOP
-;hardware.h,175 :: 		TRIG_PS1 = 0;
+;hardware.h,178 :: 		TRIG_PS1 = 0;
 MOVS	R1, #0
 SXTB	R1, R1
 MOVW	R0, #lo_addr(GPIOD_ODR+0)
 MOVT	R0, #hi_addr(GPIOD_ODR+0)
 STR	R1, [R0, #0]
-;hardware.h,176 :: 		Delay_us(1);
+;hardware.h,179 :: 		Delay_us(1);
 MOVW	R7, #38
 MOVT	R7, #0
 NOP
@@ -148,7 +148,7 @@ BNE	L_HCSR04_Read2
 NOP
 NOP
 NOP
-;hardware.h,177 :: 		while(!ECHO_PS1);
+;hardware.h,180 :: 		while(!ECHO_PS1);
 L_HCSR04_Read4:
 MOVW	R1, #lo_addr(GPIOD_IDR+0)
 MOVT	R1, #hi_addr(GPIOD_IDR+0)
@@ -159,7 +159,7 @@ BNE	L_HCSR04_Read5
 IT	AL
 BAL	L_HCSR04_Read4
 L_HCSR04_Read5:
-;hardware.h,179 :: 		while(ECHO_PS1)
+;hardware.h,182 :: 		while(ECHO_PS1)
 L_HCSR04_Read6:
 MOVW	R1, #lo_addr(GPIOD_IDR+0)
 MOVT	R1, #hi_addr(GPIOD_IDR+0)
@@ -167,13 +167,13 @@ LDR	R0, [R1, #0]
 CMP	R0, #0
 IT	EQ
 BEQ	L_HCSR04_Read7
-;hardware.h,181 :: 		HCSR04_Echo_Time++;
+;hardware.h,184 :: 		HCSR04_Echo_Time++;
 MOVW	R1, #lo_addr(_HCSR04_Echo_Time+0)
 MOVT	R1, #hi_addr(_HCSR04_Echo_Time+0)
 LDR	R0, [R1, #0]
 ADDS	R0, R0, #1
 STR	R0, [R1, #0]
-;hardware.h,182 :: 		Delay_us(1);
+;hardware.h,185 :: 		Delay_us(1);
 MOVW	R7, #38
 MOVT	R7, #0
 NOP
@@ -184,11 +184,11 @@ BNE	L_HCSR04_Read8
 NOP
 NOP
 NOP
-;hardware.h,183 :: 		}
+;hardware.h,186 :: 		}
 IT	AL
 BAL	L_HCSR04_Read6
 L_HCSR04_Read7:
-;hardware.h,184 :: 		Distance = HCSR04_Echo_Time * HCSR04_Number;
+;hardware.h,187 :: 		Distance = HCSR04_Echo_Time * HCSR04_Number;
 MOVW	R0, #lo_addr(_HCSR04_Echo_Time+0)
 MOVT	R0, #hi_addr(_HCSR04_Echo_Time+0)
 VLDR	#1, S0, [R0, #0]
@@ -200,11 +200,11 @@ VMUL.F32	S0, S1, S0
 MOVW	R0, #lo_addr(_Distance+0)
 MOVT	R0, #hi_addr(_Distance+0)
 VSTR	#1, S0, [R0, #0]
-;hardware.h,185 :: 		FloatToStr(Distance, Distance_STR);
+;hardware.h,188 :: 		FloatToStr(Distance, Distance_STR);
 MOVW	R0, #lo_addr(_Distance_STR+0)
 MOVT	R0, #hi_addr(_Distance_STR+0)
 BL	_FloatToStr+0
-;hardware.h,186 :: 		Delay_us(1000);
+;hardware.h,190 :: 		Delay_us(1000);
 MOVW	R7, #39998
 MOVT	R7, #0
 NOP
@@ -215,22 +215,22 @@ BNE	L_HCSR04_Read10
 NOP
 NOP
 NOP
-;hardware.h,187 :: 		UART1_Write_Text(Distance_STR);
+;hardware.h,191 :: 		UART1_Write_Text(Distance_STR);
 MOVW	R0, #lo_addr(_Distance_STR+0)
 MOVT	R0, #hi_addr(_Distance_STR+0)
 BL	_UART1_Write_Text+0
-;hardware.h,188 :: 		UART1_Write(13);
+;hardware.h,192 :: 		UART1_Write(13);
 MOVS	R0, #13
 BL	_UART1_Write+0
-;hardware.h,189 :: 		UART1_Write(10);
+;hardware.h,193 :: 		UART1_Write(10);
 MOVS	R0, #10
 BL	_UART1_Write+0
-;hardware.h,191 :: 		HCSR04_Echo_Time = 0;
+;hardware.h,195 :: 		HCSR04_Echo_Time = 0;
 MOVS	R1, #0
 MOVW	R0, #lo_addr(_HCSR04_Echo_Time+0)
 MOVT	R0, #hi_addr(_HCSR04_Echo_Time+0)
 STR	R1, [R0, #0]
-;hardware.h,192 :: 		}
+;hardware.h,196 :: 		}
 L_end_HCSR04_Read:
 LDR	LR, [SP, #0]
 ADD	SP, SP, #4

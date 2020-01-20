@@ -6,7 +6,7 @@ Value=0
 [BUILD_TYPE]
 Value=0
 [ACTIVE_TAB]
-Value=Drip_Test.c
+Value=hardware.h
 [USE_EEPROM]
 Value=0
 [USE_HEAP]
@@ -34,14 +34,16 @@ Count=0
 [OTHER_FILES]
 Count=0
 [SEARCH_PATH]
-Count=4
+Count=5
 Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Defs\
 Path1=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\
-Path2=E:\Office\IO Labs\Drip\Test_Code\Test\
-Path3=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
+Path2=C:\Users\Santosh\Desktop\Test\
+Path3=E:\Office\IO Labs\Drip\Test_Code\Test\
+Path4=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
 [HEADER_PATH]
-Count=1
+Count=2
 Path0=E:\Office\IO Labs\Drip\Test_Code\Test\
+Path1=C:\Users\Santosh\Desktop\Test\
 [HEADERS]
 Count=1
 File0=hardware.h

@@ -1,5 +1,8 @@
-#line 1 "E:/Office/IO Labs/Drip/Test_Code/Test/Drip_Test.c"
-#line 1 "e:/office/io labs/drip/test_code/test/hardware.h"
+#line 1 "C:/Users/Santosh/Desktop/Test/Drip_Test.c"
+#line 1 "c:/users/santosh/desktop/test/hardware.h"
+
+
+
 
 
 sbit PR_ST1_NZ1 at GPIOE_ODR.B9;
@@ -75,7 +78,7 @@ sbit PR_ST3_IR at GPIOB_IDR.B1;
 
 sbit PR_ST1_IR at GPIOB_IDR.B0;
 sbit PR_ST5_IR at GPIOB_IDR.B2;
-#line 92 "e:/office/io labs/drip/test_code/test/hardware.h"
+#line 95 "c:/users/santosh/desktop/test/hardware.h"
 sbit TRIG_PS1 at GPIOD_ODR.B6;
 sbit ECHO_PS1 at GPIOD_IDR.B5;
 float HCSR04_Number = 0.0171821;
@@ -170,6 +173,7 @@ void HCSR04_Read()
  }
  Distance = HCSR04_Echo_Time * HCSR04_Number;
  FloatToStr(Distance, Distance_STR);
+
  Delay_us(1000);
  UART1_Write_Text(Distance_STR);
  UART1_Write(13);
@@ -177,7 +181,7 @@ void HCSR04_Read()
 
  HCSR04_Echo_Time = 0;
 }
-#line 2 "E:/Office/IO Labs/Drip/Test_Code/Test/Drip_Test.c"
+#line 2 "C:/Users/Santosh/Desktop/Test/Drip_Test.c"
 void USART1_RX_interrupt() iv IVT_INT_USART1 ics ICS_AUTO{
 
  test = UART1_Read();
